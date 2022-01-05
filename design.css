@@ -1,0 +1,715 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-image: url(james-doyle-2-1.gif);
+    font-family: 'DungGeunMo';
+    width: 100vw;
+    height: 35vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 65vh;
+    cursor: pointer;
+    position: absolute;
+    z-index: 15;
+}
+
+.home span {
+    font-size: 4vw;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-top: -1vh;
+    /* text-shadow: -5px 0 #000, 0 5px #000, 5px 0 #000, 0 -5px #000; */
+}
+
+.home .blink i {
+    font-size: 3vw;
+    color: white;
+    margin-top: 1.5vh;
+    /* text-shadow: -4px 0 #000, 0 4px #000, 4px 0 #000, 0 -4px #000; */
+}
+
+@keyframes blink-effect { 50% { opacity: 0; } }
+
+.blink {animation: blink-effect 1.3s step-end infinite;}
+
+.menu {
+    width: 100vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 7;
+}
+
+.menu p {
+    display: inline-block;
+    text-align: left;
+    /* text-shadow: -7px 0 #000, 0 7px #000, 7px 0 #000, 0 -7px #000; */
+    margin-left: 11vw;
+    margin-top: 6vh;
+    margin-right: 50vw;
+    background: rgb(103,53,136);
+    background: linear-gradient(0deg, rgba(255,86,175,0.85) 0%, rgba(103,53,136,0.85) 100%);
+    padding: 2.5vh 3vw 3vh 3vw;
+    border-radius: 25px;
+    /* border: 5px solid #fff; */
+    cursor: pointer;
+    border: 4px solid #ffffff;
+}
+
+#wrap {
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 2.3vw;
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 5;
+    padding-left: 11vw;
+}
+
+#uxui {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.3vw;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 3;
+    padding-left: 11vw;
+    overflow: hidden;
+}
+
+#graphic {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.3vw;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 1;
+    padding-left: 11vw;
+}
+
+#contact {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    background-image: url(james-doyle-2-1.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.3vw;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 0;
+    padding-left: 11vw;
+}
+
+.cont {
+    width: 80vw;
+    margin-top: -8vh;
+}
+
+.cont img {
+    width: 18vw;
+    border-radius: 30px;
+    float: left;
+    margin-top: 6.5%;
+}
+
+h1 {
+    font-size: 5.5vw;
+    text-shadow: -6px 0 rgb(103,53,136), 0 6px rgb(103,53,136), 6px 0 rgb(103,53,136), 0 -6px rgb(103,53,136);
+    margin-top: 7vh;
+}
+
+.one, .two, .three, .four {
+    width: 20vw;
+    height: 25vh;
+    background-color: black;
+    color: white;
+    float: left;
+    margin-top: 5vh;
+    text-align: center;
+    padding-bottom: 20vh;
+    border-radius: 10%;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.two {
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+#uxui .one p {
+    margin-top: -1.0vh;
+}
+
+#uxui .two p, #uxui .three p {
+    margin-top: -1.5vh;
+}
+
+#uxui .two {
+    background-color: #F1E9C2;
+}
+
+#uxui .three {
+    background-color: #33231D;
+}
+
+.gm-title1, .gm-title2, .gm-title3, .uu-title1, .uu-title2, .uu-title3, .uu-title4, .gr-title1, .gr-title2, .gr-title3 {
+    width: 20vw;
+    height: 25vh;
+    border-radius: 10%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 20vh;
+    /* position: absolute; */
+}
+
+/* .gm-title1:hover, .gm-title2:hover, .gm-title3:hover, */
+.uu-title1:hover, .uu-title2:hover, .uu-title3:hover, .uu-title4:hover, .gr-title1:hover, .gr-title2:hover, .gr-title3:hover {
+    display: block;
+    opacity: 80%;
+    transition: 0.6s;
+}
+
+#game .one {
+    background-image: url(b9c35965a1764c1.gif);
+    background-position: 1.1vw 55%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+    margin-left: 5.5vw;
+}
+
+#game .two {
+    background-image: url(b9c35965a1764c1.gif);
+    background-position: 1.1vw 55%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
+
+#game .three {
+    background-image: url(b9c35965a1764c1.gif);
+    background-position: 1.1vw 55%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
+
+#uxui .one {
+    background-image: url(museum\ logo.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-color: #ffffff;
+    margin-left: 5.5vw;
+}
+
+#uxui .two {
+    background-image: url(dessertfinder_logo.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+#uxui .three {
+    background-image: url(dessertfinder_logo2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+#graphic .one {
+    background-image: url(gr_box1.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    margin-left: 5.5vw;
+}
+
+#graphic .two {
+    background-image: url(graphic\ illust.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#graphic .three {
+    background-image: url(graphic\ poster.png);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: 190%;
+}
+
+h4 {
+    font-size: 1.5vw;
+    margin-left: 5%;
+    text-align: center;
+    height: 10%;
+}
+
+#contact .profile {
+    width: 60vw;
+    height: 49vh;
+    margin-top: 6%;
+    padding-top: 3%;
+    float: left;
+    line-height: 1.2;
+    font-family: 'S-CoreDream-6Bold';
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 3%;
+    border-radius: 30px;
+}
+
+#contact .name {
+    width: 15vw;
+    float: left;
+    text-align: left;
+    margin-left: 3%;
+}
+
+#contact h3 {
+    font-size: 2.5vw;
+    float: left;
+    /* width: 20%; */
+    margin-left: 1.7vw;
+    margin-top: 5.5vh;
+    margin-bottom: 0.5vh;
+}
+
+#contact .profile .name span {
+    font-size: 1vw;
+    width: 40vw;
+    height: 2vh;
+    padding-bottom: 2vh;
+    float: left;
+    margin-left: 1.9vw;
+    /* font-weight: normal; */
+}
+
+#contact .list {
+    width: 40vw;
+}
+
+#contact .list span {
+    width: 19vw;
+    text-align: left;
+    /* font-weight: 600; */
+    /* height: 10vh; */
+    float: left;
+    margin-left: 3.8vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
+    font-size: 1.3vw;
+    /* font-size: 90%; */
+    /* line-height: 0.7; */
+}
+
+#contact .list p {
+    float: left;
+    width: 15vw;
+    height: 2vh;
+    font-size: 1vw;
+    font-weight: normal;
+    padding-bottom: 3vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 2.5vh;
+    margin-left: -13.5vw;
+}
+
+#contact .profile img {
+    width: 27vw;
+    float: right;
+    margin-right: 4vw;
+    margin-top: -23vh;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#contact button {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 15px 20px 15px 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1vw;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 2vh;
+    float: left;
+    margin-left: 15vw;
+    font-weight: bold;
+}
+
+#contact .back {
+    float: left;
+    /* margin-top: 38%; */
+    text-align: left;
+    font-size: 4vw;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    margin-right: 27vw;
+    margin-top: 2vh;
+}
+
+.one p, .two p, .three p {
+    width: 20vw;
+}
+
+.close {
+    width: 60vw;
+    height: 3vh;
+    position: fixed;
+}
+
+.close i {
+    height: 5vh;
+    display: inline-block;
+    color: white;
+    font-size: 2vw;
+    margin-left: 68vw;
+    cursor: pointer;
+}
+
+.gm-box1, .gm-box2, .gm-box3,.uu-box1, .uu-box2, .uu-box3, .uu-box4, .gr-box1, .gr-box2, .gr-box3 {
+    width: 60vw;
+    height: 85vh;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    padding-left: 10vw;
+    padding-top: 4.5vh;
+    padding-right: 13vw;
+    padding-bottom: 8vh;
+    margin-left: 9.5vw;
+    margin-top: 3vh;
+    padding-bottom: 5vh;
+    border-radius: 30px;
+}
+
+.gm-content1, .gm-content2, .gm-content3, .uu-content1, .uu-content2, .uu-content3, .uu-content4, .gr-content1, .gr-content2, .gr-content3 {
+    width: 45vw;
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+    /* text-align: center; */
+    line-height: 1.5;
+    margin-top: 5%;
+    width: 60vw;
+    margin-bottom: 5%;
+    padding-right: 5vw; 
+    /* float: left; */
+    /* margin-left: 5vw; */
+}
+
+.gm-content1::-webkit-scrollbar, .gm-content2::-webkit-scrollbar, .gm-content3::-webkit-scrollbar, .uu-content1::-webkit-scrollbar, .uu-content2::-webkit-scrollbar, .uu-content3::-webkit-scrollbar, .uu-content4::-webkit-scrollbar, .gr-content1::-webkit-scrollbar, .gr-content2::-webkit-scrollbar, .gr-content3::-webkit-scrollbar {
+    width: 13px;
+}
+
+.gm-content1::-webkit-scrollbar-thumb, .gm-content2::-webkit-scrollbar-thumb, .gm-content3::-webkit-scrollbar-thumb, .uu-content1::-webkit-scrollbar-thumb, .uu-content2::-webkit-scrollbar-thumb, .uu-content3::-webkit-scrollbar-thumb, .uu-content4::-webkit-scrollbar-thumb, .gr-content1::-webkit-scrollbar-thumb, .gr-content2::-webkit-scrollbar-thumb, .gr-content3::-webkit-scrollbar-thumb {
+    background-color: #424242;
+    border-radius: 15px;
+}
+
+.gm-content1::-webkit-scrollbar-track, .gm-content2::-webkit-scrollbar-track, .gm-content3::-webkit-scrollbar-track, .uu-content1::-webkit-scrollbar-track, .uu-content2::-webkit-scrollbar-track, .uu-content3::-webkit-scrollbar-track, .uu-content4::-webkit-scrollbar-track, .gr-content1::-webkit-scrollbar-track, .gr-content2::-webkit-scrollbar-track, .gr-content3::-webkit-scrollbar-track {
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    /* box-shadow: inset 0px 0px 5px white; */
+}
+
+.gm-content1 p, .gm-content2 p, .gm-content3 p, .uu-content1 p, .uu-content2 p, .uu-content3 p, .gr-content1 p, .gr-content2 p, .gr-content3 p {
+    margin-top: 2%;
+}
+
+.gm-content1 img, .gm-content2 img, .gm-content3 img, .uu-content1 img, .uu-content2 img, .uu-content3 img, .gr-content1 img, .gr-content2 img {
+    width: 40vw;
+    height: auto;
+    margin-top:10vh;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.gr-content3 img {
+    width: 55vw;
+    height: auto;
+    margin-top:10vh;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.subheading {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.7%;
+}
+
+.keyword {
+    width: 10vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    line-height: 1.6;
+    padding-top: 5vh;
+    border-top: 3px solid white;
+    padding-bottom: 5vh;
+    border-bottom: 3px solid white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8vw;
+}
+
+.keyword p {
+    margin-top: 10%;
+}
+
+.keyword span {
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+
+.Intro .intent {
+    width: 60w;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2;
+    margin-top: 7%;
+    font-size: 1vw;
+}
+
+.Intro {
+    display: block;
+    margin-bottom: 60vh;
+}
+
+.Intro .intent span {
+    text-align: right;
+    font-weight: 600;
+    width: 13vw;
+    height: 10vh;
+    float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 1.2vw;
+}
+
+.Intro .intent p {
+    float: left;
+    width: 41.9vw;
+    font-size: 0.8vw;
+    font-weight: normal;
+    padding-bottom: 4.8vh;
+}
+
+.Intro .period {
+    width: 60w;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2;
+    margin-top: 7%;
+    font-size: 1vw;
+}
+
+.Intro .period span {
+    text-align: right;
+    font-weight: 600;
+    width: 13vw;
+    height: 8vh;
+    float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 1.2vw;
+}
+
+.Intro .period p {
+    float: left;
+    width: 40vw;
+    font-size: 0.8vw;
+    font-weight: normal;
+    height: 8vh;
+}
+
+.Intro .tool {
+    width: 60w;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2;
+    margin-top: 7%;
+    font-size: 1vw;
+}
+
+.Intro .tool span {
+    text-align: right;
+    font-weight: 600;
+    width: 13vw;
+    height: 10vh;
+    float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 1.2vw;
+}
+
+.Intro .tool p {
+    float: left;
+    width: 40vw;
+    font-size: 0.8vw;
+    font-weight: normal;
+    height: 4vh;
+    float: left;
+}
+
+.plus {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 15px 20px 15px 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1vw;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 55%;
+    margin-bottom: 10vh;
+}
+
+h2 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 6%;
+    line-height: 0;
+    font-family: 'S-CoreDream-6Bold';
+}
+
+.info-big {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    width: 100vw;
+    height: 92vh;
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 8vh;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.info-big img {
+    width: 60vw;
+}
+
+.back {
+    font-size: 4vw;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    margin-right: 27vw;
+    margin-top: 8vh;
+    float: left;
+    /* margin-left: 20vw; */
+    /* margin-bottom: 4vh; */
+}
